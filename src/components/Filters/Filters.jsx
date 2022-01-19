@@ -14,12 +14,12 @@ const Filters = ({ setStatus, setPageNumber, setGender, setSpecies }) => {
   };
 
   return (
-    <div className="col-3">
+    <div className="col-lg-3 col-12 mb-5">
       <div className="text-center fw-bold fs-4 mb-4">Filter</div>
       <button
         onClick={clear}
         styles={{ cursor: "pointer" }}
-        className="d-grid gap-2 col-6 mx-auto mb-4 btn-primary rounded-pill">
+        className="d-grid gap-2 col-6 mx-auto mb-4 btn-info rounded-pill">
         Clear Filters
       </button>
       <div className="accordion" id="accordionExample">
