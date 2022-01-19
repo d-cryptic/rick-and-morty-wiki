@@ -4,7 +4,8 @@ import Species from "./Category/Species";
 import Status from "./Category/Status";
 
 const Filters = ({ setStatus, setPageNumber, setGender, setSpecies }) => {
-  let clear = () => {
+  let clear = (e) => {
+    e.preventDefault();
     setStatus("");
     setPageNumber("");
     setGender("");
@@ -15,12 +16,12 @@ const Filters = ({ setStatus, setPageNumber, setGender, setSpecies }) => {
   return (
     <div className="col-3">
       <div className="text-center fw-bold fs-4 mb-4">Filter</div>
-      <div
+      <button
         onClick={clear}
         styles={{ cursor: "pointer" }}
-        className="text-center text-decoration-underline text-primary mb-4">
+        className="d-grid gap-2 col-6 mx-auto mb-4 btn-primary rounded-pill">
         Clear Filters
-      </div>
+      </button>
       <div className="accordion" id="accordionExample">
         <Status setPageNumber={setPageNumber} setStatus={setStatus} />
         <Species setPageNumber={setPageNumber} setSpecies={setSpecies} />
