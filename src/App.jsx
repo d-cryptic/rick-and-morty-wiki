@@ -9,8 +9,8 @@ import Search from "./components/Search/Search";
 import Navbar from "./components/Navbar/Navbar";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Episodes from "./components/Pages/Episodes";
-import Location from "./components/Pages/Location";
+import Episodes from "./Pages/Episodes";
+import Location from "./Pages/Location";
 
 function App() {
   return (
